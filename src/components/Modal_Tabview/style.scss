@@ -1,0 +1,86 @@
+@import "../../themes/Default.scss";
+@import "../../themes/Color.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal_tabview {
+  flex: 1;
+  min-height: 520px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.15);
+  border-radius: $border-radius-default;
+  .modal_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.25);
+    .modal_name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .modal_addEvent{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex: 1;
+    
+    .total_product{
+        display: flex;
+        justify-content: space-around;
+        .total{
+            color: red;
+        }
+        h2{
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .btn_create_event{
+       width: 100%;
+       height: 50px;
+       border: none;
+       background-color: $purple;
+       border-radius: 0;
+       border-bottom-left-radius: 30px;
+       border-bottom-right-radius: 30px;
+       color: white;
+       font-size: 18px;
+       font-weight: bold;
+    }
+  }
+  .add_product{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    height: 70px;
+    border: 1px solid rgba(212, 212, 212, 0.389);
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-right: 1px solid rgba(212, 212, 212, 0.389);
+    }
+    .btn_add{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        background-color: $purple;
+        color: $white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+}

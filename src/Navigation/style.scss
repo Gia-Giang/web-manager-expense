@@ -1,0 +1,74 @@
+@import "../themes/Color.scss";
+
+.container-navi {
+  display: flex;
+  .content-wrapper {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .tab-bottom {
+    border-left: 1px solid rgba(255, 255, 255, 0.23);
+      padding: 0 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height:80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $background;
+      &-list{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .noti{
+            position: relative;
+            &-total{
+                position: absolute;
+                top: -10px;
+                right: -5px;
+                background-color: $purple100;
+                color: white;
+                font-size: 12px;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &-img{
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+                overflow: hidden;
+                img{
+                  max-width: 100%;
+                  height: auto;
+                }
+            }
+            &-name{
+                color: white;
+            }
+        }
+      }
+    }
+    .content {
+      height: 88vh;
+      overflow-y: auto;
+      margin-top: 80px;
+      padding: 20px 50px;
+    }
+  }
+}
+.change-theme{
+    background-color: $purple100 !important;
+}

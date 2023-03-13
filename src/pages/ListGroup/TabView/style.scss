@@ -1,0 +1,25 @@
+@import "../../../themes/Color.scss";
+
+.ant-tabs-ink-bar {
+  background-color: transparent !important;
+}
+
+.ant-tabs-tab {
+  border: none !important;
+  margin: 0 !important;
+  padding: 5px 20px !important;
+  background-color: $pink !important;
+  margin-right: 10px !important;
+  border-radius: 20px !important;
+  color: $white !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: $white !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active{
+    background-color: $purple !important;
+}
+
+.ant-tabs-top >.ant-tabs-nav::before{
+  border-bottom: none;
+}
